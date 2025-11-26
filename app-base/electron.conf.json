@@ -1,0 +1,19 @@
+{
+  "splash": {
+    "active": true,
+    
+    "width": 300,
+    "height": 400
+  },
+  "default_window": {
+    "width": 1200,
+    "height": 800,
+    "minWidth": 800,
+    "minHeight": 600,
+
+    "URL": {
+      "active": false,
+      "url": "https://next-base-bay.vercel.app/"
+    }
+  }
+}

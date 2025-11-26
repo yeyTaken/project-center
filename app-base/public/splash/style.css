@@ -1,0 +1,45 @@
+body {
+  background-color: transparent;
+  user-select: none;
+}
+
+.splash-container {
+  width: 400px;
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  -webkit-app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: drag;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+}
+
+.dot {
+  animation: wave 1.2s infinite;
+  display: inline-block;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
