@@ -1,0 +1,18 @@
+{
+  "homePage": {
+    "title": "Meu Projeto Next.js",
+    "description": "Uma introdução simples criada com Next.js, Tailwind e React Icons.",
+    "buttonGithub": "Ver no GitHub"
+  },
+  "lib": {
+    "i18n": {
+      "localeSwitcher": {
+        "ariaLabel": "Trocar idioma",
+        "languages": {
+          "pt": "Português",
+          "en": "Inglês"
+        }
+      }
+    }
+  }
+}
