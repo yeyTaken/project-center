@@ -38,7 +38,7 @@ Ferramentas criadas para facilitar instalações e automações no Linux.
 | Ferramenta | Tipo | Link |
 |------------|------|-------|
 | **NVM Installer (PT-BR)** | Guia + script para instalar NVM + Node LTS | [Abrir](linux-tools/NVM.install.pt.md) |
-| **Zsh Installer (PT-BR)** | Guia + script para instalar Zsh + Terminal padrão + plugins | [Abrir](linux-tools/NVM.install.pt.md) |
+| **Zsh Installer (PT-BR)** | Guia + script para instalar Zsh + Terminal padrão + plugins | [Abrir](linux-tools/ZSH.install.pt.md) |
 
 ---
 
