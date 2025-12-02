@@ -107,7 +107,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ## Via Git (recomendado)
 
 ```bash
-git clone --depth=1 https://github.com/powerlevel10k/powerlevel10k.git \
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
   ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
