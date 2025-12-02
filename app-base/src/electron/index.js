@@ -29,7 +29,7 @@ function defaultWindow() {
     minHeight: default_window.minHeight,
     show: false, // só mostra quando estiver pronta
     autoHideMenuBar: true,
-    icon: path.join(__dirname, "..", "..", "icon.ico"),
+    icon: path.join(__dirname, "..", "..", "favicon.ico"),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
@@ -57,7 +57,7 @@ function defaultWindow() {
 }
 
 app.whenReady().then(() => {
-  consola.warn("App Base iniciado com sucesso!")
+  consola.warn("App Base iniciado com sucesso!");
   defaultWindow();
 
   app.on("activate", () => {
