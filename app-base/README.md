@@ -7,7 +7,7 @@
 ### Pré-requisitos
 
 * **Node.js** (versão 16 ou superior)
-* **npm** (ou **yarn**)
+* **npm** [Não use; pnpm, yarn ou bun. Apenas NPM]
 * **Git** (opcional, para versionamento)
 
 ---
@@ -25,8 +25,6 @@
 
    ```bash
    npm install
-   # ou
-   yarn install
    ```
 
 ---

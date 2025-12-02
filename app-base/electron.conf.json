@@ -12,7 +12,7 @@
     "minHeight": 600,
 
     "URL": {
-      "active": false,
+      "active": true,
       "url": "https://next-base-bay.vercel.app/"
     }
   }
