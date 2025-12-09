@@ -40,6 +40,7 @@ Ferramentas criadas para facilitar instalações e automações no Linux.
 | **NVM Installer (PT-BR)** | Guia + script para instalar NVM + Node LTS | [Abrir](linux-tools/NVM.install.pt.md) |
 | **Zsh Installer (PT-BR)** | Guia + script para instalar Zsh + Terminal padrão + plugins | [Abrir](linux-tools/ZSH.install.pt.md) |
 | **Yay Installer (PT-BR)** | Guia + script para instalar Yay | [Abrir](linux-tools/yay.install.pt.md) |
+| **Yay Apps (PT-BR)** | Guia + Apps para instalar com Yay | [Abrir](linux-tools/yay.apps.pt.md) |
 
 ---
 
