@@ -1,5 +1,5 @@
 # 🚀 Centro de Projetos
-**Hub centralizado de sistemas, websites, ferramentas Linux e projetos fullstack.**  
+**Hub centralizado de sistemas, websites, ferramentas Linux e projetos fullstack.**
 Organizado em módulos, com documentação própria e estrutura expandível.
 
 ---
@@ -9,6 +9,7 @@ Organizado em módulos, com documentação própria e estrutura expandível.
 | Categoria        | Descrição | Link |
 |------------------|-----------|------|
 | **Monorepos**    | Bases completas com múltiplos apps, ideal para projetos escaláveis. | [Abrir](monorepo-base/README.md) |
+| **Base Nextra Docs**    | Base completa de documentação com Nextra v4. | [Abrir](template-docs/README.md) |
 | **Apps Base**    | Templates para iniciar electron rapidamente. | [Abrir](app-base/README.md) |
 | **Linux Tools**  | Ferramentas, tutoriais e instaladores para sistemas Linux. | [Abrir](linux-tools/) |
 
@@ -20,6 +21,14 @@ Organizado em módulos, com documentação própria e estrutura expandível.
 |---------|-----------|------|
 | **Monorepo Base** | Estrutura base para projetos com múltiplos apps usando PNPM workspaces. | [Abrir](monorepo-base/README.md) |
 | **Next Base** | Template Next.js otimizado, dentro do monorepo. | [Abrir](monorepo-base/apps/next-base/README.md) |
+
+---
+
+## 🧩 Base Nextra Docs
+
+| Projeto | Descrição | Link |
+|---------|-----------|------|
+| **Base Nextra Docs**    | Base completa de documentação com Nextra v4. | [Abrir](template-docs/README.md) |
 
 ---
 
