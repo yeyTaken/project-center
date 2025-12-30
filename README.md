@@ -6,10 +6,10 @@ Organizado em módulos, com documentação própria e estrutura expandível.
 
 ## 📁 Estrutura Geral dos Projetos
 
-| Categoria        | Descrição | Link |
-|------------------|-----------|------|
+| Categoria        | Descrição | Link | Preview |
+|------------------|-----------|------|---------|
 | **Monorepos**    | Bases completas com múltiplos apps, ideal para projetos escaláveis. | [Abrir](monorepo-base/README.md) |
-| **Base Nextra Docs**    | Base completa de documentação com Nextra v4. | [Abrir](template-docs/README.md) |
+| **Base Nextra Docs**    | Base completa de documentação com Nextra v4. | [Abrir](template-docs/README.md) | [Abrir](yeytaken-template-docs.vercel.app) |
 | **Apps Base**    | Templates para iniciar electron rapidamente. | [Abrir](app-base/README.md) |
 | **Linux Tools**  | Ferramentas, tutoriais e instaladores para sistemas Linux. | [Abrir](linux-tools/) |
 
@@ -26,9 +26,10 @@ Organizado em módulos, com documentação própria e estrutura expandível.
 
 ## 🧩 Base Nextra Docs
 
-| Projeto | Descrição | Link |
-|---------|-----------|------|
-| **Base Nextra Docs**    | Base completa de documentação com Nextra v4. | [Abrir](template-docs/README.md) |
+
+| Projeto | Descrição | Link | Preview |
+|---------|-----------|------|---------|
+| **Base Nextra Docs**    | Base completa de documentação com Nextra v4. | [Abrir](template-docs/README.md) | [Abrir](yeytaken-template-docs.vercel.app) |
 
 ---
 
