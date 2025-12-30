@@ -1,0 +1,96 @@
+---
+title: "Instalação"
+---
+
+import { Callout, Steps, Tabs } from "nextra/components";
+
+<br/>
+
+<Callout type="info">
+Certifique-se de ter **Node.js 20+** instalado antes de prosseguir.
+</Callout>
+
+<Steps>
+
+## Instalar o Git
+
+<Tabs items={['Linux', 'macOS', 'Windows']}>
+
+<Tabs.Tab>
+
+Debian, Ubuntu e derivados:
+
+```bash
+sudo apt install git
+````
+
+Arch Linux e derivados:
+
+```bash
+sudo pacman -S git
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+```bash
+brew install git
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+Baixe e instale a versão oficial em
+[https://git-scm.com/download/win](https://git-scm.com/download/win)
+</Tabs.Tab>
+
+</Tabs>
+
+## Clonar o repositório
+
+```bash
+git clone https://github.com/yeyTaken/project-center.git
+```
+
+## Acessar o template de documentação
+
+```bash
+cd project-center/template-docs
+```
+
+## Instalar dependências
+
+O projeto utiliza **pnpm** como gerenciador principal:
+
+```bash
+pnpm install
+```
+
+<Callout type="warn">Alternativamente, com **npm**:</Callout>
+
+```bash
+npm install
+```
+
+## Iniciar o ambiente de desenvolvimento
+
+Com **pnpm**:
+
+```bash
+pnpm dev
+```
+
+Ou com **npm**:
+
+```bash
+npm run dev
+```
+
+</Steps>
+
+<Callout type="success">
+O servidor de desenvolvimento ficará disponível em
+**http://localhost:3000**
+</Callout>

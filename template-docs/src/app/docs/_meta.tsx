@@ -1,11 +1,18 @@
 import type { MetaRecord } from "nextra";
 import { AiFillDiscord } from "react-icons/ai";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaUpload } from "react-icons/fa";
 
 const index = (
   <span style={{ display: "flex", alignItems: "center" }}>
     <FaHome style={{ marginRight: "0.5em" }} />
     Introdução
+  </span>
+);
+
+const docsCloneGuide = (
+  <span style={{ display: "flex", alignItems: "center" }}>
+    <FaUpload style={{ marginRight: "0.5em" }} />
+    Instalação
   </span>
 );
 
@@ -19,13 +26,18 @@ const discord = (
 export default {
   index: {
     title: index,
-    theme: {
-      footer: false,
-      navbar: true,
-    },
   },
 
   _: {
+    type: "separator",
+    title: "Geral",
+  },
+
+  "docs-clone-guide": {
+    title: docsCloneGuide,
+  },
+
+  __: {
     type: "separator",
     title: "Outros",
   },

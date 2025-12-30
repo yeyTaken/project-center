@@ -33,6 +33,8 @@ export default {
   docs: {
     type: 'page',
     title: docs,
-    
+    theme: {
+      footer: false,
+    }
   },
 } satisfies MetaRecord

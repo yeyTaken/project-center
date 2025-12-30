@@ -1,116 +1,108 @@
 ---
 title: "Introdução"
-description: "Exemplo completo de componentes do Nextra"
+description: "Exemplo atualizado de todos os built-ins do Nextra"
 ---
 
 import {
   Callout,
-  Cards,
-  Card,
-  Steps,
-  Tabs,
-  Tab,
   Bleed,
+  Cards,
   FileTree,
+  Steps,
   Table,
-  Details
+  Tabs
 } from 'nextra/components'
+
+<br/>
 
 # Introdução
 
-Bem-vindo ao caos organizado do **Nextra**.
+Este exemplo usa todos os componentes buil-ins válidos na **Nextra v4**.
 
----
+# Callout
 
-## Callout
+<Callout type="default">
+  Chamada padrão.
+</Callout>
 
 <Callout type="info">
-  Callout informativo.
+  Informação útil.
 </Callout>
 
 <Callout type="warning">
-  Callout de aviso.
+  Aviso para o leitor.
 </Callout>
 
 <Callout type="error">
-  Callout de erro.
+  Mensagem de erro.
 </Callout>
 
-<Callout type="default">
-  Callout padrão.
-</Callout>
-
----
-
-## Cards
+# Cards (API atual)
 
 <Cards>
-  <Card title="Card simples" href="#">
-    Conteúdo básico.
-  </Card>
-
-  <Card title="Card com ícone" icon="⚡">
-    Rápido e inútil.
-  </Card>
-
-  <Card title="Card externo" href="https://nextra.site" target="_blank">
-    Link externo.
-  </Card>
+  <Cards.Card
+    title="Callout"
+    href="#"
+  />
+  <Cards.Card
+    title="Tabs"
+    href="#"
+  />
+  <Cards.Card
+    title="Steps"
+    href="#"
+  />
 </Cards>
 
----
-
-## Steps
+# Steps
 
 <Steps>
-  ### Instalar
-  `pnpm add nextra`
 
-  ### Configurar
-  Ajuste `next.config.js`
+## Instalar
 
-  ### Escrever
-  Reclame da documentação.
+Execute `pnpm add nextra nextra-theme-docs`
+
+## Configurar
+
+Ajuste seu `next.config.js`
+
+## Executar
+
+Rode `pnpm dev`
+
 </Steps>
 
----
+# Tabs
 
-## Tabs
+<Tabs items={['JS', 'TS', 'JSON']}>
 
-<Tabs items={["JavaScript", "TypeScript", "JSON"]}>
-  <Tab>
-    ```js
-    const abc = 123
-    console.log(abc)
-    ```
-  </Tab>
+<Tabs.Tab>
 
-  <Tab>
-    ```ts
-    const abc: number = 123
-    console.log(abc)
-    ```
-  </Tab>
+```js
+console.log('Hello JS')
+````
 
-  <Tab>
-    ```json
-    { "abc": 123 }
-    ```
-  </Tab>
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+```ts
+console.log('Hello TS')
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+```json
+{ "ok": true }
+```
+
+</Tabs.Tab>
+
 </Tabs>
 
----
-
-## Bleed
-
-<Bleed>
-  **Conteúdo fora da largura padrão.**  
-  Útil quando você quer quebrar o layout e irritar o designer.
-</Bleed>
-
----
-
-## FileTree
+# FileTree
 
 <FileTree>
   <FileTree.Folder name="src" defaultOpen>
@@ -121,49 +113,23 @@ Bem-vindo ao caos organizado do **Nextra**.
   </FileTree.Folder>
 </FileTree>
 
----
-
-## Table
+# Table de propriedades
 
 <Table>
   <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Tipo</th>
-      <th>Obrigatório</th>
-    </tr>
+    <Table.Tr>
+      <Table.Th>Country</Table.Th>
+      <Table.Th>Flag</Table.Th>
+    </Table.Tr>
   </thead>
   <tbody>
-    <tr>
-      <td>title</td>
-      <td>string</td>
-      <td>sim</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>string</td>
-      <td>não</td>
-    </tr>
+    <Table.Tr>
+      <Table.Td>France</Table.Td>
+      <Table.Td>🇫🇷</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Ukraine</Table.Td>
+      <Table.Td>🇺🇦</Table.Td>
+    </Table.Tr>
   </tbody>
 </Table>
-
----
-
-## Details
-
-<Details summary="Clique para expandir">
-  Conteúdo colapsável.  
-  Ideal para esconder decisões ruins.
-</Details>
-
----
-
-## Markdown padrão também funciona
-
-- Lista
-- Normal
-- Como esperado
-
-```js copy
-const abc = 123
-console.log(abc)

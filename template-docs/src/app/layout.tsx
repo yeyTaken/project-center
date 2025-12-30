@@ -53,7 +53,7 @@ export default async function RootLayout({ children }: Props) {
           {/* Background */}
           <div
             className="
-    pointer-events-none absolute inset-0 z-0
+    pointer-events-none fixed inset-0 z-0
     dark:opacity-[0.1]
     dark:brightness-100
   "
@@ -101,6 +101,7 @@ export default async function RootLayout({ children }: Props) {
               WebkitMaskComposite: "source-in",
             }}
           />
+
 
           {/* Conteúdo real */}
           <div className="relative z-10">

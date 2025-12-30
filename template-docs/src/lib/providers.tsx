@@ -8,13 +8,13 @@ import NextImage from 'next/image'
 
 import Navbar from "@/_components/UI/Navbar";
 import Footer from "@/_components/UI/Footer";
-import Banner from "@/_components/UI/Banner";
+// import Banner from "@/_components/UI/Banner";
 import Search from "@/_components/UI/Search";
 
 export async function Providers({ children }: { children: React.ReactNode }) {
   return (
     <Layout
-      banner={<Banner />}
+      // banner={<Banner />}
       navbar={<Navbar />}
       pageMap={await getPageMap()}
       docsRepositoryBase="https://github.com/yeytaken"
@@ -28,6 +28,8 @@ export async function Providers({ children }: { children: React.ReactNode }) {
       }}
       // feedback={{ content: "" }}
       toc={{
+        backToTop: "Voltar ao topo",
+        title: "Conteúdo da página",
         extraContent: (
           <>
             <b className="mt-2 text-xs">Criado por:</b>
