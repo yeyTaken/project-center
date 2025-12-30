@@ -1,13 +1,169 @@
 ---
 title: "Introdução"
+description: "Exemplo completo de componentes do Nextra"
 ---
 
+import {
+  Callout,
+  Cards,
+  Card,
+  Steps,
+  Tabs,
+  Tab,
+  Bleed,
+  FileTree,
+  Table,
+  Details
+} from 'nextra/components'
 
-Em desenvolvimento...
+# Introdução
 
+Bem-vindo ao caos organizado do **Nextra**.
+
+---
+
+## Callout
+
+<Callout type="info">
+  Callout informativo.
+</Callout>
+
+<Callout type="warning">
+  Callout de aviso.
+</Callout>
+
+<Callout type="error">
+  Callout de erro.
+</Callout>
+
+<Callout type="default">
+  Callout padrão.
+</Callout>
+
+---
+
+## Cards
+
+<Cards>
+  <Card title="Card simples" href="#">
+    Conteúdo básico.
+  </Card>
+
+  <Card title="Card com ícone" icon="⚡">
+    Rápido e inútil.
+  </Card>
+
+  <Card title="Card externo" href="https://nextra.site" target="_blank">
+    Link externo.
+  </Card>
+</Cards>
+
+---
+
+## Steps
+
+<Steps>
+  ### Instalar
+  `pnpm add nextra`
+
+  ### Configurar
+  Ajuste `next.config.js`
+
+  ### Escrever
+  Reclame da documentação.
+</Steps>
+
+---
+
+## Tabs
+
+<Tabs items={["JavaScript", "TypeScript", "JSON"]}>
+  <Tab>
+    ```js
+    const abc = 123
+    console.log(abc)
+    ```
+  </Tab>
+
+  <Tab>
+    ```ts
+    const abc: number = 123
+    console.log(abc)
+    ```
+  </Tab>
+
+  <Tab>
+    ```json
+    { "abc": 123 }
+    ```
+  </Tab>
+</Tabs>
+
+---
+
+## Bleed
+
+<Bleed>
+  **Conteúdo fora da largura padrão.**  
+  Útil quando você quer quebrar o layout e irritar o designer.
+</Bleed>
+
+---
+
+## FileTree
+
+<FileTree>
+  <FileTree.Folder name="src" defaultOpen>
+    <FileTree.File name="index.ts" />
+    <FileTree.Folder name="components">
+      <FileTree.File name="Button.tsx" />
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree>
+
+---
+
+## Table
+
+<Table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tipo</th>
+      <th>Obrigatório</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>title</td>
+      <td>string</td>
+      <td>sim</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>string</td>
+      <td>não</td>
+    </tr>
+  </tbody>
+</Table>
+
+---
+
+## Details
+
+<Details summary="Clique para expandir">
+  Conteúdo colapsável.  
+  Ideal para esconder decisões ruins.
+</Details>
+
+---
+
+## Markdown padrão também funciona
+
+- Lista
+- Normal
+- Como esperado
 
 ```js copy
-const abc = 123;
-
+const abc = 123
 console.log(abc)
-```

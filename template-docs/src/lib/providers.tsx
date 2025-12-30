@@ -31,35 +31,34 @@ export async function Providers({ children }: { children: React.ReactNode }) {
         extraContent: (
           <>
             <b className="mt-2 text-xs">Criado por:</b>
-            {[
-              {
-                url: 'https://github.com/yeytaken',
-                alt: 'Israel R. Jatobá',
-                img: "/images/R.png"
-              },
-              // {
-              //   url: 'https://example.com',
-              //   alt: 'Example!',
-              //   img: "/images/example.png"
-              // }
-            ].map(o => (
-              <Anchor
-                key={o.url}
-                href={`${o.url}`}
-              >
-                <NextImage
-                  src={o.img}
-                  title={o.alt}
-                  alt={o.alt}
-                  className="nextra-border rounded-sm border"
-                />
-              </Anchor>
-            ))}
+            <div className="mt-2 flex gap-2">
+              {[
+                {
+                  url: 'https://github.com/yeytaken',
+                  alt: 'Israel R. Jatobá',
+                  img: "/images/R.png"
+                }
+              ].map(o => (
+                <Anchor key={o.url} href={o.url}>
+                  <NextImage
+                    src={o.img}
+                    title={o.alt}
+                    alt={o.alt}
+                    width={32}
+                    height={32}
+                    className="nextra-border rounded-sm border"
+                  />
+                </Anchor>
+              ))}
+            </div>
+
           </>
         )
       }}
     >
-      <HeroUIProvider>{children}</HeroUIProvider>
+      <HeroUIProvider>
+        <div className="pt-24">{children}</div>
+      </HeroUIProvider>
     </Layout>
   );
 }
