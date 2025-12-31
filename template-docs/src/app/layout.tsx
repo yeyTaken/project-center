@@ -2,32 +2,35 @@ import { Head } from 'nextra/components'
 
 import '../../public/styles/globals.css'
 import { Providers } from '@/lib/providers';
+import { settings } from '@/lib';
 
 export const metadata = {
-  metadataBase: new URL('https://example.com/'),
-  applicationName: 'Template Docs',
+  metadataBase: new URL(settings.links.site),
+  applicationName: settings.name,
+  description: "Documentação oficial do template de docs feito com Nextra.",
   appleWebApp: {
-    title: 'Template Docs'
+    title: settings.name
   },
   title: {
-    default: "Template Docs",
-    template: `Template Docs — %s`,
+    default: settings.name,
+    template: `${settings.name} — %s`,
   },
   authors: [
-    { name: "Israel R. Jatobá", url: "https://github.com/yeytaken" }
+    { name: settings.author, url: "https://github.com/yeytaken" }
   ],
-  creator: "Israel R. Jatobá",
+  creator: settings.author,
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
     // https://github.com/vercel/next.js/discussions/50189#discussioncomment-10826632
     url: './',
-    siteName: 'Template Docs',
-    locale: 'en_US',
+    siteName: settings.name,
+    locale: 'pt_BR',
     type: 'website'
   },
   keywords: [
+    settings.name,
     'Nextra',
     'Next.js',
     'React',

@@ -6,7 +6,7 @@ import { FaArrowRight } from 'react-icons/fa'
 export default function HomeApp() {
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-20">
+        <section className="relative min-h-screen flex items-center justify-center -mt-15 px-6 lg:px-20">
             <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
